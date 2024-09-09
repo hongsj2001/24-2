@@ -7,12 +7,12 @@ int main() {
 	string elvis("Elvis Presley");
 	string singer;
 
-	cout << song + "¸¦ ºÎ¸¥ °¡¼ö´Â ";
-	cout << "(ÈùÆ® : Ã¹ ±ÛÀÚ´Â " << elvis[0] << ")? :\n";
+	cout << song + "ë¥¼ ë¶€ë¥¸ ê°€ìˆ˜ëŠ” ";
+	cout << "(ížŒíŠ¸ : ì²« ê¸€ìžëŠ” " << elvis[0] << ")? :\n";
 
 	getline(cin, singer);
 	if (singer == elvis)
-		cout << "Á¤´äÀÔ´Ï´Ù. ";
+		cout << "ì •ë‹µìž…ë‹ˆë‹¤. ";
 	else
-		cout << "¿À´äÀÔ´Ï´Ù. Á¤´äÀº " + elvis + "ÀÔ´Ï´Ù. \n";
+		cout << "ì˜¤ë‹µìž…ë‹ˆë‹¤. ì •ë‹µì€ " + elvis + "ìž…ë‹ˆë‹¤. \n";
 }

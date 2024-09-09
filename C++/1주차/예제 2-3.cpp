@@ -2,16 +2,16 @@
 using namespace std;
 
 int main() {
-	cout << "³Êºñ¸¦ ÀÔ·ÂÇÏ¼¼¿ä :";
+	cout << "ë„ˆë¹„ë¥¼ ìž…ë ¥í•˜ì„¸ìš” :";
 	
 	int width;
 	cin >> width;
 
-	cout << "³ôÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+	cout << "ë†’ì´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
 	
 	int height;
 	cin >> height;
 
 	int area = width * height;
-	cout << "¸éÀûÀº " << area << "\n";
+	cout << "ë©´ì ì€ " << area << "\n";
 }

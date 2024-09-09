@@ -1,4 +1,4 @@
-//2ÁÖÂ÷ ½Ç½À : ÀÔ/Ãâ·ÂÀ» ÀÌ¿ëÇÑ ±¸±¸´Ü Ãâ·Â
+//2ì£¼ì°¨ ì‹¤ìŠµ : ì…/ì¶œë ¥ì„ ì´ìš©í•œ êµ¬êµ¬ë‹¨ ì¶œë ¥
 
 #include <iostream>
 #include <string>
@@ -12,15 +12,15 @@ int mul(int x, int y) {
 int main() {
 
 	int a, b;
-	cout << "Á¤¼ö 2°³ ÀÔ·Â (2~9): \n";
+	cout << "ì •ìˆ˜ 2ê°œ ì…ë ¥ (2~9): \n";
 	cin >> a;
 	cin >> b;
 
 	string matrix;
-	cout << "¹æÇâ ÀÔ·Â (°¡·Î, ¼¼·Î): ";
+	cout << "ë°©í–¥ ì…ë ¥ (ê°€ë¡œ, ì„¸ë¡œ): ";
 	cin >> matrix;
 	if ((a > 9) or (b > 9) or (a<2) or (b<2)) {
-		cout << "2¿Í 9 »çÀÌÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ";
+		cout << "2ì™€ 9 ì‚¬ì´ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ";
 	}
 	else {
 		if (a > b) {
@@ -30,7 +30,7 @@ int main() {
 			b = tmp;
 		}
 
-		if (matrix == "°¡·Î") {
+		if (matrix == "ê°€ë¡œ") {
 			for (int i = a; i < b + 1; i++) {
 				for (int j = 1; j < 10; j++) {
 					cout << i << "*" << j << "=" << mul(i, j);
@@ -41,7 +41,7 @@ int main() {
 				cout << "\n";
 			}
 		}
-		else if (matrix == "¼¼·Î") {
+		else if (matrix == "ì„¸ë¡œ") {
 			for (int i = 1; i < 10; i++) {
 				for (int j = a; j < b + 1; j++) {
 					cout << j << "*" << i << "=" << mul(i, j);
@@ -53,6 +53,6 @@ int main() {
 			}
 		}
 		else
-			cout << "¿Ã¹Ù¸¥ ¹æÇâÀ» ÀÔ·ÂÇÏ¼¼¿ä";
+			cout << "ì˜¬ë°”ë¥¸ ë°©í–¥ì„ ì…ë ¥í•˜ì„¸ìš”";
 	}
 }

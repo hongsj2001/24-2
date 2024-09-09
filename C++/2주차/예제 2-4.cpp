@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-	cout << "ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+	cout << "ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ";
 
 	char name[11];
 	cin >> name;
 
-	cout << "ÀÌ¸§Àº " << name << "ÀÔ´Ï´Ù. \n";
+	cout << "ì´ë¦„ì€ " << name << "ìž…ë‹ˆë‹¤. \n";
 }

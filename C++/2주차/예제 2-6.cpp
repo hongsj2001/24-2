@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main() {
-	cout << "ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+	cout << "ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ";
 	char address[100];
 	cin.getline(address, 100, '\n');
-	cout << "ÁÖ¼Ò´Â " << address << " ÀÔ´Ï´Ù.";
+	cout << "ì£¼ì†ŒëŠ” " << address << " ìž…ë‹ˆë‹¤.";
 }
