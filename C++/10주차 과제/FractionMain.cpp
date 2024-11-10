@@ -3,7 +3,7 @@ using namespace std;
 #include "Fraction.h"
 
 int main() {
-	cout << "분수1 (분자 , 분모) 입력 : ";
+	cout << "분수1 (분자, 분모 입력) : ";
 	int n1, n2, d1, d2, x;
 	cin >> n1;
 	cin >> d1;

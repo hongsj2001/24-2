@@ -13,7 +13,8 @@ void Fraction::printFraction() {
 	cout << "(" << numerator << "/" << denominator << ")";
 }
 void Fraction::printResult() {
-	cout << "(" << (numerator/denominator) << ")" << endl;
+	
+	cout << "(" << ((double)numerator/(double)denominator) << ")" << endl;
 }
 bool Fraction::operator==(Fraction frac2) {
 	if ((numerator* frac2.denominator == frac2.numerator * denominator))
@@ -37,6 +38,7 @@ Fraction Fraction::operator+(Fraction frac2) {
 Fraction Fraction::operator+(int x) {
 	Fraction tmp;
 	tmp.numerator = numerator + denominator * x;
+	tmp.denominator = denominator;
 	return tmp;
 }
 Fraction operator+(int op1, Fraction frac) {
@@ -54,6 +56,7 @@ Fraction Fraction::operator-(Fraction frac2) {
 }
 Fraction Fraction::operator-(int x) {
 	Fraction tmp;
+	tmp.denominator = denominator;
 	tmp.numerator = numerator - denominator * x;
 	return tmp;
 }
@@ -73,6 +76,7 @@ Fraction Fraction::operator*(Fraction frac2) {
 Fraction Fraction::operator*(int x) {
 	Fraction tmp;
 	tmp.numerator = numerator * x;
+	tmp.denominator = denominator;
 	return tmp;
 }
 Fraction operator*(int op1, Fraction frac) {
@@ -90,6 +94,7 @@ Fraction Fraction::operator/(Fraction frac2) {
 }
 Fraction Fraction::operator/(int x) {
 	Fraction tmp;
+	tmp.numerator = numerator;
 	tmp.denominator = denominator * x;
 	return tmp;
 }
