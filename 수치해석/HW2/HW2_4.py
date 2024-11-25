@@ -1,5 +1,6 @@
 import math
-
+import numpy as np
+import matplotlib.pyplot as plt
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -34,5 +35,3 @@ def fixed_point_iteration(x0, kmax=40, tol=1e-10):
 # 초기값 설정
 x0 = 0.3
 result = fixed_point_iteration(x0)
-
-print("근사해:", result)
